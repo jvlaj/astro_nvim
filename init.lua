@@ -50,6 +50,20 @@ return {
       --   return true
       -- end
     },
+    -- edit lsp server configuration
+    config = {
+      tailwindcss = {
+        settings = {
+          tailwindCSS = {
+            experimental = {
+              classRegex = {
+                { "cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]" },
+              },
+            },
+          },
+        },
+      },
+    },
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"

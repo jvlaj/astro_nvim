@@ -5,7 +5,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     -- overrides `require("mason-lspconfig").setup(...)`
     opts = {
-      ensure_installed = { "lua_ls",  "jsonls", "bashls", "gopls", "efm", "pyright", "tailwindcss", "tsserver" },
+      ensure_installed = { "lua_ls", "jsonls", "bashls", "gopls", "efm", "pyright", "tailwindcss", "tsserver" },
     },
   },
   -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
@@ -23,4 +23,21 @@ return {
       -- ensure_installed = { "python" },
     },
   },
+  -- lsp = {
+  --   setup_handlers = {
+  --     tailwindcss = function(_, opts)
+  --       require("tailwindcss").setup(opts) {
+  --         settings = {
+  --           tailwindCSS = {
+  --             experimental = {
+  --               classRegex = {
+  --                 { "cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]" },
+  --               },
+  --             },
+  --           },
+  --         },
+  --       }
+  --     end,
+  --   },
+  -- },
 }
