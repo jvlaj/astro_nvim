@@ -1,4 +1,7 @@
 -- set vim options here (vim.<first_key>.<second_key> = value)
+vim.cmd('autocmd FileType markdown setlocal textwidth=80')
+vim.cmd('autocmd BufWritePre *.md :%s/\\s\\+$//e')
+
 return {
   opt = {
     -- set to true or false etc.
