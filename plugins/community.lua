@@ -19,9 +19,17 @@ return {
         },
       },
     },
+    { import = "astrocommunity.bars-and-lines.smartcolumn-nvim" },
+    {
+      "m4xshen/smartcolumn.nvim",
+      opts = {
+        colorcolumn = 120,
+        disabled_filetypes = { "help" },
+      },
+    },
     -- astro community colorschemes
-    { import = "astrocommunity.colorscheme.nightfox",  enabled = false },
-    { import = "astrocommunity.colorscheme.kanagawa",  enabled = true },
+    { import = "astrocommunity.colorscheme.nightfox",           enabled = true },
+    { import = "astrocommunity.colorscheme.kanagawa",           enabled = true },
     { import = "astrocommunity.colorscheme.rose-pine" },
     { import = "astrocommunity.colorscheme.catppuccin" },
     {
